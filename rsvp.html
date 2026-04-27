@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSVP | Richard & Kasia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Alex+Brush&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="rsvp">
+    <div class="site-canvas auth-hidden">
+      <div class="template-card">
+        <header class="template-header">
+          <nav class="template-nav" aria-label="Primary navigation">
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="rsvp.html" data-i18n="nav.rsvp">RSVP</a>
+            <a href="info.html" data-i18n="nav.info">Information</a>
+          </nav>
+          <div class="header-controls">
+            <div class="language-toggle" role="group" aria-label="Language toggle">
+              <button type="button" class="lang-button is-active" data-lang-choice="en">EN</button>
+              <button type="button" class="lang-button" data-lang-choice="pl">PL</button>
+            </div>
+            <button type="button" class="logout-button" data-action="logout" data-i18n="auth.logout">Log out</button>
+          </div>
+        </header>
+
+        <main class="content-page">
+          <section class="page-intro">
+            <p class="block-kicker" data-i18n="rsvp.eyebrow">RSVP</p>
+            <h1 data-i18n="rsvp.title">Reply to the invitation</h1>
+            <p data-i18n="rsvp.intro">
+              Use the correct form for your guest group. The palace group can also confirm accommodation for the night of the wedding.
+            </p>
+          </section>
+
+          <section class="info-columns">
+            <article class="info-block">
+              <p class="block-kicker" data-i18n="rsvp.deadlineTitle">Deadline</p>
+              <h2 data-i18n="rsvp.deadlineHeading">31 May 2026</h2>
+              <p data-i18n="rsvp.deadlineBody">Please RSVP by 31st May latest or you will miss the most exclusive party in Europe.</p>
+            </article>
+
+            <article class="info-block" data-guest-group="palace">
+              <p class="block-kicker" data-i18n="rsvp.palaceTitle">Palace guests</p>
+              <h2 data-i18n="rsvp.palaceHeading">Reception and room confirmation</h2>
+              <p data-i18n="rsvp.palaceBody">You are in the palace guest group, so your form includes accommodation for the wedding night.</p>
+              <a class="template-button" data-role="palace-rsvp-link" href="https://forms.gle/replace-palace-form" target="_blank" rel="noreferrer" data-i18n="rsvp.palaceButton">Open palace RSVP form</a>
+            </article>
+
+            <article class="info-block" data-guest-group="wesele">
+              <p class="block-kicker" data-i18n="rsvp.weseleTitle">Wedding guests</p>
+              <h2 data-i18n="rsvp.weseleHeading">Reception RSVP</h2>
+              <p data-i18n="rsvp.weseleBody">Use the wedding guest form to confirm attendance and share any practical details we need.</p>
+              <a class="template-button" data-role="wesele-rsvp-link" href="https://forms.gle/replace-wesele-form" target="_blank" rel="noreferrer" data-i18n="rsvp.weseleButton">Open wedding RSVP form</a>
+            </article>
+          </section>
+
+          <section class="story-panel">
+            <figure>
+              <img src="PalaceBarWide.jpg" alt="Palace exterior" />
+            </figure>
+            <div>
+              <p class="block-kicker" data-i18n="rsvp.accommodationTitle">Accommodation at the palace</p>
+              <h2 data-i18n="rsvp.accommodationHeading">Useful details for overnight guests</h2>
+              <ul class="list-clean" data-guest-group="palace">
+                <li data-i18n="rsvp.accommodation1">Check-out is at 11:00.</li>
+                <li data-i18n="rsvp.accommodation2">Breakfast is included.</li>
+                <li data-i18n="rsvp.accommodation3">Bedding and towels will be provided.</li>
+                <li data-i18n="rsvp.accommodation4">Families with babies will have their own rooms.</li>
+                <li data-i18n="rsvp.accommodation5">Room allocations can still change on the day.</li>
+              </ul>
+              <p data-i18n="rsvp.noteBody">
+                The site shows the RSVP section based on the username you used to enter. If you think you should see the palace form but do not, contact us and we will fix it.
+              </p>
+            </div>
+          </section>
+        </main>
+
+        <footer class="template-footer">
+          <a class="footer-rsvp" href="rsvp.html" data-i18n="nav.rsvp">RSVP</a>
+          <div class="footer-center">
+            <p class="couple-name">Richard & Kasia</p>
+            <p data-i18n="footer.copy">Wedding weekend in Lusowo and Szczepowice</p>
+          </div>
+          <div class="footer-herbs">
+            <img src="PoznanHerb.png" alt="Poznań coat of arms" />
+            <img src="ZielonaGoraHerb.png" alt="Zielona Góra coat of arms" />
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="auth-overlay" data-auth-overlay>
+      <div class="auth-card">
+        <p class="auth-kicker" data-i18n="auth.eyebrow">Private wedding website</p>
+        <h1 data-i18n="auth.title">Enter with your invitation details</h1>
+        <p class="auth-intro" data-i18n="auth.body">
+          Use the username and password from your invitation. Palace guests will see their accommodation RSVP after login.
+        </p>
+        <div class="auth-toolbar">
+          <div class="auth-language">
+            <span data-i18n="auth.language">Language</span>
+            <div class="language-toggle" role="group" aria-label="Language toggle">
+              <button type="button" class="lang-button is-active" data-lang-choice="en">EN</button>
+              <button type="button" class="lang-button" data-lang-choice="pl">PL</button>
+            </div>
+          </div>
+        </div>
+        <form id="login-form" class="auth-form">
+          <label>
+            <span data-i18n="auth.username">Username</span>
+            <input type="text" name="username" autocomplete="username" required />
+          </label>
+          <label>
+            <span data-i18n="auth.password">Password</span>
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+          <label class="show-password-toggle">
+            <input type="checkbox" data-action="toggle-password" />
+            <span data-i18n="auth.showPassword">Show password</span>
+          </label>
+          <button class="template-button" type="submit" data-i18n="auth.submit">Enter site</button>
+          <p class="form-note" id="login-error" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

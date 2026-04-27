@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard & Kasia | Wedding</title>
+    <meta name="description" content="Wedding website for Richard and Kasia." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Alex+Brush&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-canvas auth-hidden">
+      <div class="template-card">
+        <header class="template-header">
+          <nav class="template-nav" aria-label="Primary navigation">
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="rsvp.html" data-i18n="nav.rsvp">RSVP</a>
+            <a href="info.html" data-i18n="nav.info">Information</a>
+          </nav>
+          <div class="header-controls">
+            <div class="language-toggle" role="group" aria-label="Language toggle">
+              <button type="button" class="lang-button is-active" data-lang-choice="en">EN</button>
+              <button type="button" class="lang-button" data-lang-choice="pl">PL</button>
+            </div>
+            <button type="button" class="logout-button" data-action="logout" data-i18n="auth.logout">Log out</button>
+          </div>
+        </header>
+
+        <main>
+          <section class="hero-image-frame">
+            <img src="PalaceBarWide.jpg" alt="Palace wedding venue" />
+          </section>
+
+          <section class="nameplate">
+            <div class="nameplate-inner">
+              <p class="hero-eyebrow" data-i18n="home.eyebrow">15 August 2026 · Lusowo & Szczepowice</p>
+              <h1 data-i18n="home.title">Richard & Kasia</h1>
+              <p class="hero-date">15 · 08 · 2026</p>
+              <p class="hero-subline" data-i18n="home.intro">
+                Join us for Mass in Lusowo and a reception in Pałac Szczepowice, with music, long tables, Polish hospitality and room for a proper celebration.
+              </p>
+              <div class="hero-actions">
+                <a class="template-button" href="rsvp.html" data-i18n="home.primaryCta">Reply to the invitation</a>
+                <a class="template-button is-light" href="info.html" data-i18n="home.secondaryCta">See the practical details</a>
+              </div>
+              <p class="countdown-line"><span data-i18n="home.countdownLabel">Time until the wedding</span> · <strong id="countdown">Loading...</strong></p>
+            </div>
+          </section>
+
+          <section class="info-columns">
+            <article class="info-block">
+              <p class="block-kicker" data-i18n="home.dayTitle">The day</p>
+              <h2 data-i18n="home.dayHeading">Mass at 14:00, reception to follow</h2>
+              <p data-i18n="home.dayBody">
+                The wedding Mass begins at 14:00 in Kościół św. Jadwigi i Jakuba Apostoła, then we continue to Pałac Szczepowice for the reception.
+              </p>
+            </article>
+            <article class="info-block">
+              <p class="block-kicker" data-i18n="home.deadlineTitle">RSVP deadline</p>
+              <h2 data-i18n="home.deadlineHeading">Please reply by 31 May 2026</h2>
+              <p data-i18n="home.deadlineBody">Please RSVP by 31st May latest or you will miss the most exclusive party in Europe.</p>
+            </article>
+            <article class="info-block">
+              <p class="block-kicker" data-i18n="home.weekendTitle">Long weekend warning</p>
+              <h2 data-i18n="home.weekendHeading">Book flights and stays early</h2>
+              <p data-i18n="home.weekendBody">This falls during a four day bank holiday weekend in Poland, so flights, trains and rooms will go quickly.</p>
+            </article>
+          </section>
+
+          <section class="story-panel">
+            <figure>
+              <img src="ChurchGateWide.png" alt="Church gate in Lusowo" />
+            </figure>
+            <div>
+              <p class="block-kicker" data-i18n="home.placeTitle">Places with character</p>
+              <h2 data-i18n="home.placeHeading">Church, palace and a very Polish setting</h2>
+              <p data-i18n="home.placeBody1">
+                Lusowo sits just outside Poznań, a city known for trade, engineering, solid train connections and a stubborn sense of regional identity. It is one of Poland's oldest urban centres and still manages to feel practical, proud and slightly contrarian.
+              </p>
+              <p data-i18n="home.placeBody2">
+                The church of St Jadwiga and St James the Apostle serves a historic local parish, while Pałac Szczepowice offers the quieter, estate-side mood for the evening celebration.
+              </p>
+              <div class="heritage-inline">
+                <img src="VaticanFlag.png" alt="Vatican flag" />
+                <img src="PolandHerb.png" alt="Polish coat of arms" />
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="template-footer">
+          <a class="footer-rsvp" href="rsvp.html" data-i18n="nav.rsvp">RSVP</a>
+          <div class="footer-center">
+            <p class="couple-name">Richard & Kasia</p>
+            <p data-i18n="footer.copy">Wedding weekend in Lusowo and Szczepowice</p>
+          </div>
+          <div class="footer-herbs">
+            <img src="PoznanHerb.png" alt="Poznań coat of arms" />
+            <img src="ZielonaGoraHerb.png" alt="Zielona Góra coat of arms" />
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="auth-overlay" data-auth-overlay>
+      <div class="auth-card">
+        <p class="auth-kicker" data-i18n="auth.eyebrow">Private wedding website</p>
+        <h1 data-i18n="auth.title">Enter with your invitation details</h1>
+        <p class="auth-intro" data-i18n="auth.body">
+          Use the username and password from your invitation. Palace guests will see their accommodation RSVP after login.
+        </p>
+        <div class="auth-toolbar">
+          <div class="auth-language">
+            <span data-i18n="auth.language">Language</span>
+            <div class="language-toggle" role="group" aria-label="Language toggle">
+              <button type="button" class="lang-button is-active" data-lang-choice="en">EN</button>
+              <button type="button" class="lang-button" data-lang-choice="pl">PL</button>
+            </div>
+          </div>
+        </div>
+        <form id="login-form" class="auth-form">
+          <label>
+            <span data-i18n="auth.username">Username</span>
+            <input type="text" name="username" autocomplete="username" required />
+          </label>
+          <label>
+            <span data-i18n="auth.password">Password</span>
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+          <label class="show-password-toggle">
+            <input type="checkbox" data-action="toggle-password" />
+            <span data-i18n="auth.showPassword">Show password</span>
+          </label>
+          <button class="template-button" type="submit" data-i18n="auth.submit">Enter site</button>
+          <p class="form-note" id="login-error" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

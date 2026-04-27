@@ -1,0 +1,373 @@
+const SITE_COPY = {
+  en: {
+    "nav.home": "Home",
+    "nav.rsvp": "RSVP",
+    "nav.info": "Information",
+    "auth.logout": "Log out",
+    "auth.eyebrow": "Private wedding website",
+    "auth.title": "Enter with your invitation details",
+    "auth.body": "Use the username and password from your invitation. Palace guests will see their accommodation RSVP after login.",
+    "auth.username": "Username",
+    "auth.password": "Password",
+    "auth.language": "Language",
+    "auth.showPassword": "Show password",
+    "auth.submit": "Enter site",
+    "auth.invalid": "Those details do not match our guest list.",
+    "home.eyebrow": "15 August 2026 · Lusowo & Szczepowice",
+    "home.title": "Richard & Kasia",
+    "home.intro": "Join us for Mass in Lusowo and a reception in Pałac Szczepowice, with music, long tables, Polish hospitality and room for a proper celebration.",
+    "home.primaryCta": "Reply to the invitation",
+    "home.secondaryCta": "See the practical details",
+    "home.countdownLabel": "Time until the wedding",
+    "home.dayTitle": "The day",
+    "home.dayHeading": "Mass at 14:00, reception to follow",
+    "home.dayBody": "The wedding Mass begins at 14:00 in Kościół św. Jadwigi i Jakuba Apostoła, then we continue to Pałac Szczepowice for the reception.",
+    "home.deadlineTitle": "RSVP deadline",
+    "home.deadlineHeading": "Please reply by 31 May 2026",
+    "home.deadlineBody": "Please RSVP by 31st May latest or you will miss the most exclusive party in Europe.",
+    "home.weekendTitle": "Long weekend warning",
+    "home.weekendHeading": "Book flights and stays early",
+    "home.weekendBody": "This falls during a four day bank holiday weekend in Poland, so flights, trains and rooms will go quickly.",
+    "home.placeTitle": "Places with character",
+    "home.placeHeading": "Church, palace and a very Polish setting",
+    "home.placeBody1": "Lusowo sits just outside Poznań, a city known for trade, engineering, solid train connections and a stubborn sense of regional identity. It is one of Poland's oldest urban centres and still manages to feel practical, proud and slightly contrarian.",
+    "home.placeBody2": "The church of St Jadwiga and St James the Apostle serves a historic local parish, while Pałac Szczepowice offers the quieter, estate-side mood for the evening celebration.",
+    "rsvp.eyebrow": "RSVP",
+    "rsvp.title": "Reply to the invitation",
+    "rsvp.intro": "Use the correct form for your guest group. The palace group can also confirm accommodation for the night of the wedding.",
+    "rsvp.deadlineTitle": "Deadline",
+    "rsvp.deadlineHeading": "31 May 2026",
+    "rsvp.deadlineBody": "Please RSVP by 31st May latest or you will miss the most exclusive party in Europe.",
+    "rsvp.palaceTitle": "Palace guests",
+    "rsvp.palaceHeading": "Reception and room confirmation",
+    "rsvp.palaceBody": "You are in the palace guest group, so your form includes accommodation for the wedding night.",
+    "rsvp.palaceButton": "Open palace RSVP form",
+    "rsvp.weseleTitle": "Wedding guests",
+    "rsvp.weseleHeading": "Reception RSVP",
+    "rsvp.weseleBody": "Use the wedding guest form to confirm attendance and share any practical details we need.",
+    "rsvp.weseleButton": "Open wedding RSVP form",
+    "rsvp.accommodationTitle": "Accommodation at the palace",
+    "rsvp.accommodationHeading": "Useful details for overnight guests",
+    "rsvp.accommodation1": "Check-out is at 11:00.",
+    "rsvp.accommodation2": "Breakfast is included.",
+    "rsvp.accommodation3": "Bedding and towels will be provided.",
+    "rsvp.accommodation4": "Families with babies will have their own rooms.",
+    "rsvp.accommodation5": "Room allocations can still change on the day.",
+    "rsvp.noteTitle": "Practical note",
+    "rsvp.noteHeading": "If your link looks wrong, tell us",
+    "rsvp.noteBody": "The site shows the RSVP section based on the username you used to enter. If you think you should see the palace form but do not, contact us and we will fix it.",
+    "info.eyebrow": "Information",
+    "info.title": "Travel, schedule and local intelligence",
+    "info.intro": "Everything practical in one place: where to go, what to wear, what to book quickly and what to eat before you leave Greater Poland.",
+    "info.timelineTitle": "Timeline",
+    "info.timelineHeading": "Saturday, 15 August 2026",
+    "info.timelineChurchHeading": "Wedding Mass",
+    "info.timelineChurchBody": "Kościół św. Jadwigi i Jakuba Apostoła, Poznańska 2, 62-080 Lusowo, Poland.",
+    "info.googleMaps": "Google Maps",
+    "info.appleMaps": "Apple Maps",
+    "info.timelineReceptionTime": "After Mass",
+    "info.timelineReceptionHeading": "Reception at the palace",
+    "info.timelineReceptionBody": "Pałac Szczepowice, Szczepowice 14, 62-060 Wolkowo, Poland.",
+    "info.dressTitle": "Dress code",
+    "info.dressHeading": "Formal, festive, not timid",
+    "info.dressBody": "Think wedding formal with personality: suits, dresses, elegant separates, polished shoes. Hats are accepted and encouraged if you can carry them properly.",
+    "info.childrenTitle": "For families",
+    "info.childrenHeading": "A nanny room for babies will be provided",
+    "info.childrenBody": "Families with very small children will have some practical help on site, including a nanny room for babies.",
+    "info.drinksTitle": "Important drinks policy",
+    "info.drinksHeading": "Leave the spirits at home",
+    "info.drinksBody": "Please abstain from bringing spirits to the wedding. Wine and mead are welcome. If you need historical support for this principle, read about the story of Polish wine.",
+    "info.drinksLink": "Read the history of wine in Poland",
+    "info.travelTitle": "Getting there",
+    "info.travelHeading": "Best routes into Poznań",
+    "info.travel1": "Poznań Airport is the best option. Bus 159 runs regularly into central Poznań in about 45 minutes.",
+    "info.travel2": "Wrocław Airport is the second best choice. Fast trains from Wrocław to Poznań can take about 1.5 hours.",
+    "info.travel3": "Szczecin Airport is possible if schedules work for you.",
+    "info.travel4": "Berlin is not recommended because crossing the border can be slow and irritating, but there is a direct FlixBus to Poznań if you must.",
+    "info.travel5": "Warsaw also works, though Modlin is best avoided if you can.",
+    "info.travel6": "Kraków is around five hours away by train, so only choose it if you enjoy unnecessary ambition.",
+    "info.carTitle": "Car hire",
+    "info.carHeading": "KaizenRent is recommended",
+    "info.carBody": "KaizenRent is usually a very cheap car rental option while stock lasts. It comes recommended from prior experience.",
+    "info.historyTitle": "History",
+    "info.churchHeading": "The church and the palace",
+    "info.churchBody1": "The parish church in Lusowo reflects the long Catholic history of the region and its rural communities, with a setting that still feels rooted rather than theatrical.",
+    "info.churchBody2": "Pałac Szczepowice belongs to the tradition of Greater Poland manor houses and estates: a quieter type of elegance built around land, hospitality and orderly celebration.",
+    "info.poznanTitle": "Poznań notes",
+    "info.poznanHeading": "One of Poland's oldest cities",
+    "info.poznanBody1": "Poznań is one of the oldest and most economically active cities in Poland, with strong traditions in trade, manufacturing and engineering.",
+    "info.poznanBody2": "Trains and rail vehicles are part of the city's industrial story, and the city remains well connected, businesslike and very conscious of its standards.",
+    "info.poznanBody3": "It is also famously fond of efficiency, Saint Martin croissants and reminding the rest of the country that Greater Poland does things properly.",
+    "info.croissantTitle": "Food order",
+    "info.croissantHeading": "Do not leave without eating a St Martin Croissant",
+    "info.croissantBody1": "The rogale świętomarcińskie of Poznań are a protected regional pastry traditionally connected to St Martin's Day. They are rich, excessive and absolutely correct.",
+    "info.croissantBody2": "Their modern reputation comes from local baking traditions, white poppy seed filling and the city's strong attachment to culinary ceremony.",
+    "info.contactTitle": "Questions",
+    "info.contactHeading": "Ask for practical help",
+    "info.contactBody": "Use the form below if you need help with travel, accommodation or anything else. The current address is a placeholder and can be swapped for a real mail form service later.",
+    "info.contactName": "Name",
+    "info.contactEmail": "Email",
+    "info.contactMessage": "Message",
+    "info.contactSubmit": "Send message",
+    "footer.copy": "Wedding weekend in Lusowo and Szczepowice"
+  },
+  pl: {
+    "nav.home": "Start",
+    "nav.rsvp": "RSVP",
+    "nav.info": "Informacje",
+    "auth.logout": "Wyloguj",
+    "auth.eyebrow": "Prywatna strona ślubna",
+    "auth.title": "Wejdź używając danych z zaproszenia",
+    "auth.body": "Użyj nazwy użytkownika i hasła z zaproszenia. Goście z grupy pałacowej zobaczą po zalogowaniu opcję potwierdzenia noclegu.",
+    "auth.username": "Nazwa użytkownika",
+    "auth.password": "Hasło",
+    "auth.language": "Język",
+    "auth.showPassword": "Pokaż hasło",
+    "auth.submit": "Wejdź na stronę",
+    "auth.invalid": "Te dane nie zgadzają się z naszą listą gości.",
+    "home.eyebrow": "15 sierpnia 2026 · Lusowo i Szczepowice",
+    "home.title": "Richard i Kasia",
+    "home.intro": "Zapraszamy na Mszę w Lusowie i wesele w Pałacu Szczepowice, z muzyką, długimi stołami, polską gościnnością i miejscem na porządne świętowanie.",
+    "home.primaryCta": "Potwierdź przybycie",
+    "home.secondaryCta": "Zobacz informacje praktyczne",
+    "home.countdownLabel": "Czas do ślubu",
+    "home.dayTitle": "Dzień ślubu",
+    "home.dayHeading": "Msza o 14:00, potem przyjęcie",
+    "home.dayBody": "Msza ślubna zaczyna się o 14:00 w Kościele św. Jadwigi i Jakuba Apostoła, a następnie przenosimy się do Pałacu Szczepowice na wesele.",
+    "home.deadlineTitle": "Termin RSVP",
+    "home.deadlineHeading": "Prosimy o odpowiedź do 31 maja 2026",
+    "home.deadlineBody": "Prosimy o RSVP najpóźniej do 31 maja, inaczej ominie Was najbardziej ekskluzywna impreza w Europie.",
+    "home.weekendTitle": "Uwaga na długi weekend",
+    "home.weekendHeading": "Rezerwujcie loty i noclegi wcześnie",
+    "home.weekendBody": "Termin wypada w czasie czterodniowego weekendu świątecznego w Polsce, więc loty, pociągi i pokoje będą szybko znikać.",
+    "home.placeTitle": "Miejsca z charakterem",
+    "home.placeHeading": "Kościół, pałac i bardzo polska sceneria",
+    "home.placeBody1": "Lusowo leży tuż pod Poznaniem, miastem znanym z handlu, inżynierii, dobrych połączeń kolejowych i upartego poczucia regionalnej tożsamości. To jeden z najstarszych ośrodków miejskich w Polsce, a przy tym nadal pozostaje praktyczny, dumny i lekko przekorny.",
+    "home.placeBody2": "Kościół św. Jadwigi i św. Jakuba Apostoła służy historycznej parafii, a Pałac Szczepowice zapewnia spokojniejszy, majątkowy klimat na wieczorne świętowanie.",
+    "rsvp.eyebrow": "RSVP",
+    "rsvp.title": "Potwierdzenie przybycia",
+    "rsvp.intro": "Użyj odpowiedniego formularza dla swojej grupy gości. Grupa pałacowa może również potwierdzić nocleg po weselu.",
+    "rsvp.deadlineTitle": "Termin",
+    "rsvp.deadlineHeading": "31 maja 2026",
+    "rsvp.deadlineBody": "Prosimy o RSVP najpóźniej do 31 maja, inaczej ominie Was najbardziej ekskluzywna impreza w Europie.",
+    "rsvp.palaceTitle": "Goście pałacowi",
+    "rsvp.palaceHeading": "Potwierdzenie wesela i pokoju",
+    "rsvp.palaceBody": "Jesteś w grupie pałacowej, więc Twój formularz obejmuje także nocleg po weselu.",
+    "rsvp.palaceButton": "Otwórz formularz pałacowy",
+    "rsvp.weseleTitle": "Goście weselni",
+    "rsvp.weseleHeading": "RSVP na wesele",
+    "rsvp.weseleBody": "Użyj formularza dla gości weselnych, aby potwierdzić obecność i przekazać nam potrzebne informacje.",
+    "rsvp.weseleButton": "Otwórz formularz weselny",
+    "rsvp.accommodationTitle": "Nocleg w pałacu",
+    "rsvp.accommodationHeading": "Przydatne informacje dla gości nocujących",
+    "rsvp.accommodation1": "Wymeldowanie jest o 11:00.",
+    "rsvp.accommodation2": "Śniadanie jest w cenie.",
+    "rsvp.accommodation3": "Pościel i ręczniki będą zapewnione.",
+    "rsvp.accommodation4": "Rodziny z niemowlętami będą miały własne pokoje.",
+    "rsvp.accommodation5": "Przydział pokoi może jeszcze zmienić się w dniu wesela.",
+    "rsvp.noteTitle": "Uwaga praktyczna",
+    "rsvp.noteHeading": "Jeśli widzisz zły link, daj nam znać",
+    "rsvp.noteBody": "Strona pokazuje odpowiednią sekcję RSVP na podstawie nazwy użytkownika użytej przy logowaniu. Jeśli uważasz, że powinieneś widzieć formularz pałacowy, a go nie widzisz, napisz do nas.",
+    "info.eyebrow": "Informacje",
+    "info.title": "Podróż, plan dnia i lokalne wskazówki",
+    "info.intro": "Wszystko praktyczne w jednym miejscu: dokąd jechać, co założyć, co zarezerwować szybko i co zjeść przed wyjazdem z Wielkopolski.",
+    "info.timelineTitle": "Plan dnia",
+    "info.timelineHeading": "Sobota, 15 sierpnia 2026",
+    "info.timelineChurchHeading": "Msza ślubna",
+    "info.timelineChurchBody": "Kościół św. Jadwigi i Jakuba Apostoła, Poznańska 2, 62-080 Lusowo, Polska.",
+    "info.googleMaps": "Google Maps",
+    "info.appleMaps": "Apple Maps",
+    "info.timelineReceptionTime": "Po Mszy",
+    "info.timelineReceptionHeading": "Przyjęcie w pałacu",
+    "info.timelineReceptionBody": "Pałac Szczepowice, Szczepowice 14, 62-060 Wolkowo, Polska.",
+    "info.dressTitle": "Dress code",
+    "info.dressHeading": "Elegancko, odświętnie, bez nieśmiałości",
+    "info.dressBody": "Myślcie o stroju formalnym z charakterem: garnitury, sukienki, eleganckie zestawy i dopracowane buty. Kapelusze są mile widziane, jeśli umiecie je dobrze nosić.",
+    "info.childrenTitle": "Dla rodzin",
+    "info.childrenHeading": "Będzie osobny pokój dla niemowląt z opieką",
+    "info.childrenBody": "Rodziny z bardzo małymi dziećmi będą miały na miejscu praktyczne wsparcie, w tym pokój dla niemowląt.",
+    "info.drinksTitle": "Ważna zasada dotycząca alkoholu",
+    "info.drinksHeading": "Mocne alkohole zostawcie w domu",
+    "info.drinksBody": "Prosimy, aby nie przynosić na wesele mocnych alkoholi. Wino i miód pitny są mile widziane. Jeśli potrzebujecie historycznego uzasadnienia tej zasady, przeczytajcie o historii polskiego wina.",
+    "info.drinksLink": "Przeczytaj o historii wina w Polsce",
+    "info.travelTitle": "Dojazd",
+    "info.travelHeading": "Najlepsze trasy do Poznania",
+    "info.travel1": "Lotnisko Poznań jest najlepszą opcją. Autobus 159 regularnie jedzie do centrum Poznania w około 45 minut.",
+    "info.travel2": "Lotnisko Wrocław to druga najlepsza opcja. Szybkie pociągi z Wrocławia do Poznania jadą około 1,5 godziny.",
+    "info.travel3": "Lotnisko Szczecin też jest możliwe, jeśli pasuje rozkład.",
+    "info.travel4": "Berlin nie jest polecany, bo przekraczanie granicy bywa powolne i irytujące, ale jeśli musicie, jest bezpośredni FlixBus do Poznania.",
+    "info.travel5": "Warszawa też wchodzi w grę, choć Modlina najlepiej unikać, jeśli można.",
+    "info.travel6": "Kraków jest około pięć godzin pociągiem, więc wybierajcie go tylko, jeśli lubicie niepotrzebnie ambitne podróże.",
+    "info.carTitle": "Wynajem auta",
+    "info.carHeading": "Polecamy KaizenRent",
+    "info.carBody": "KaizenRent to zwykle bardzo tani wynajem auta, dopóki są dostępne samochody. Polecamy na podstawie wcześniejszych doświadczeń.",
+    "info.historyTitle": "Historia",
+    "info.churchHeading": "Kościół i pałac",
+    "info.churchBody1": "Kościół parafialny w Lusowie odzwierciedla długą katolicką historię regionu i jego wiejskich wspólnot, a jego otoczenie nadal wydaje się zakorzenione, a nie teatralne.",
+    "info.churchBody2": "Pałac Szczepowice wpisuje się w tradycję wielkopolskich dworów i majątków: spokojniejszej elegancji opartej na ziemi, gościnności i uporządkowanym świętowaniu.",
+    "info.poznanTitle": "Kilka słów o Poznaniu",
+    "info.poznanHeading": "Jedno z najstarszych miast Polski",
+    "info.poznanBody1": "Poznań jest jednym z najstarszych i najbardziej aktywnych gospodarczo miast w Polsce, z mocnymi tradycjami handlowymi, przemysłowymi i inżynieryjnymi.",
+    "info.poznanBody2": "Pociągi i pojazdy szynowe są częścią przemysłowej historii miasta, a samo miasto pozostaje dobrze skomunikowane, konkretne i bardzo świadome swoich standardów.",
+    "info.poznanBody3": "Słynie też z zamiłowania do porządku, rogali świętomarcińskich i przypominania reszcie kraju, że w Wielkopolsce rzeczy robi się porządnie.",
+    "info.croissantTitle": "Nakaz kulinarny",
+    "info.croissantHeading": "Nie wyjeżdżajcie bez zjedzenia rogala świętomarcińskiego",
+    "info.croissantBody1": "Rogale świętomarcińskie z Poznania to chroniony regionalny wypiek tradycyjnie związany z dniem św. Marcina. Są bogate, przesadne i całkowicie słuszne.",
+    "info.croissantBody2": "Ich współczesna sława wynika z lokalnej tradycji piekarskiej, nadzienia z białego maku i silnego przywiązania miasta do kulinarnego ceremoniału.",
+    "info.contactTitle": "Pytania",
+    "info.contactHeading": "Zapytaj o sprawy praktyczne",
+    "info.contactBody": "Użyj poniższego formularza, jeśli potrzebujesz pomocy z podróżą, noclegiem lub czymkolwiek innym. Obecny adres jest tymczasowy i później można go podmienić na prawdziwą usługę do wysyłania formularzy.",
+    "info.contactName": "Imię i nazwisko",
+    "info.contactEmail": "Email",
+    "info.contactMessage": "Wiadomość",
+    "info.contactSubmit": "Wyślij wiadomość",
+    "footer.copy": "Ślubny weekend w Lusowie i Szczepowicach"
+  }
+};
+
+const GUESTS = {
+  palace26: { password: "mm26poznan", group: "palace" },
+  wesele95: { password: "kr95lusowo", group: "wesele" }
+};
+
+const STORAGE_KEYS = {
+  auth: "weddingAuth",
+  lang: "weddingLang"
+};
+
+function getSavedLanguage() {
+  return localStorage.getItem(STORAGE_KEYS.lang) || "en";
+}
+
+function setLanguage(lang) {
+  const chosen = SITE_COPY[lang] ? lang : "en";
+  document.documentElement.lang = chosen;
+  localStorage.setItem(STORAGE_KEYS.lang, chosen);
+  document.querySelectorAll("[data-lang-choice]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.langChoice === chosen);
+  });
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    const key = node.dataset.i18n;
+    const copy = SITE_COPY[chosen][key];
+    if (copy) {
+      node.textContent = copy;
+    }
+  });
+  updateCountdown(chosen);
+}
+
+function getAuthState() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.auth) || "null");
+  } catch {
+    return null;
+  }
+}
+
+function setAuthState(authState) {
+  localStorage.setItem(STORAGE_KEYS.auth, JSON.stringify(authState));
+}
+
+function clearAuthState() {
+  localStorage.removeItem(STORAGE_KEYS.auth);
+}
+
+function applyAuthState() {
+  const authState = getAuthState();
+  const isValid = authState && authState.username && GUESTS[authState.username];
+  document.body.classList.toggle("is-authenticated", Boolean(isValid));
+  applyGuestGroup(isValid ? GUESTS[authState.username].group : null);
+}
+
+function applyGuestGroup(group) {
+  document.querySelectorAll("[data-guest-group]").forEach((node) => {
+    node.classList.toggle("hidden-by-group", node.dataset.guestGroup !== group);
+  });
+}
+
+function updateCountdown(lang) {
+  const countdownNode = document.getElementById("countdown");
+  if (!countdownNode) {
+    return;
+  }
+  const weddingDate = new Date("2026-08-15T14:00:00+02:00");
+  const now = new Date();
+  const diffMs = weddingDate - now;
+  if (diffMs <= 0) {
+    countdownNode.textContent = lang === "pl" ? "To już dziś" : "It is today";
+    return;
+  }
+  const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diffMs / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
+  countdownNode.textContent = lang === "pl"
+    ? `${days} dni, ${hours} godz., ${minutes} min`
+    : `${days} days, ${hours} hrs, ${minutes} min`;
+}
+
+function handleLogin(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const formData = new FormData(form);
+  const username = String(formData.get("username") || "").trim();
+  const password = String(formData.get("password") || "").trim();
+  const guest = GUESTS[username];
+  const errorNode = document.getElementById("login-error");
+  const lang = getSavedLanguage();
+  if (!guest || guest.password !== password) {
+    if (errorNode) {
+      errorNode.textContent = SITE_COPY[lang]["auth.invalid"];
+    }
+    return;
+  }
+  setAuthState({ username, group: guest.group });
+  if (errorNode) {
+    errorNode.textContent = "";
+  }
+  form.querySelectorAll("[data-action='toggle-password']").forEach((toggle) => {
+    toggle.checked = false;
+  });
+  const passwordInput = form.querySelector("input[name='password']");
+  if (passwordInput) {
+    passwordInput.type = "password";
+  }
+  form.reset();
+  applyAuthState();
+}
+
+function handleLogout() {
+  clearAuthState();
+  applyAuthState();
+}
+
+function initEvents() {
+  const loginForm = document.getElementById("login-form");
+  if (loginForm) {
+    loginForm.addEventListener("submit", handleLogin);
+  }
+  document.querySelectorAll("[data-action='logout']").forEach((button) => {
+    button.addEventListener("click", handleLogout);
+  });
+  document.querySelectorAll("[data-lang-choice]").forEach((button) => {
+    button.addEventListener("click", () => setLanguage(button.dataset.langChoice));
+  });
+  document.querySelectorAll("[data-action='toggle-password']").forEach((toggle) => {
+    toggle.addEventListener("change", () => {
+      const form = toggle.closest("form");
+      const passwordInput = form ? form.querySelector("input[name='password']") : null;
+      if (passwordInput) {
+        passwordInput.type = toggle.checked ? "text" : "password";
+      }
+    });
+  });
+}
+
+function init() {
+  initEvents();
+  setLanguage(getSavedLanguage());
+  applyAuthState();
+  updateCountdown(getSavedLanguage());
+  window.setInterval(() => updateCountdown(getSavedLanguage()), 60000);
+}
+
+init();
