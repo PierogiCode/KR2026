@@ -365,6 +365,40 @@ h2 {
   color: var(--ink-soft);
 }
 
+.portrait-small {
+  width: 72px;
+  height: auto;
+  float: right;
+  margin: 0 0 8px 14px;
+  box-shadow: 0 2px 8px rgba(54, 40, 28, 0.18);
+}
+
+.faq-list {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list dt {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  font-weight: 600;
+  margin: 14px 0 4px;
+}
+
+.faq-list dt:first-child {
+  margin-top: 0;
+}
+
+.faq-list dd {
+  margin: 0 0 4px 0;
+  color: var(--ink-soft);
+  line-height: 1.62;
+  font-size: 1.02rem;
+}
+
 .inline-actions {
   flex-wrap: wrap;
   margin: 8px 0 10px;

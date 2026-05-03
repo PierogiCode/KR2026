@@ -130,11 +130,20 @@ const SITE_COPY = {
     "info.contactEmail": "Email",
     "info.contactMessage": "Message",
     "info.contactSubmit": "Send message",
+    "info.contactThanks": "Thank you — we will be in touch!",
+    "info.faqTitle": "FAQ",
+    "info.faqHeading": "Frequently asked questions",
+    "info.faq1q": "What will the weather be like?",
+    "info.faq1a": "We have requested good weather (thank you Marguerite), however statistically, expect 25–30°C and sunshine. Sunglasses recommended.",
+    "info.faq2q": "Can I bring pets?",
+    "info.faq2a": "Yes.",
+    "info.faq3q": "Is there parking at the church and venue?",
+    "info.faq3a": "Yes. For cars. No Boeings please.",
     "footer.copy": "Wedding weekend in Lusowo and Szczepowice"
   },
   pl: {
     "nav.home": "Start",
-    "nav.rsvp": "RSVP",
+    "nav.rsvp": "Formularz RSVP",
     "nav.info": "Informacje",
     "auth.logout": "Wyloguj",
     "auth.eyebrow": "Prywatna strona ślubna",
@@ -263,6 +272,15 @@ const SITE_COPY = {
     "info.contactEmail": "Email",
     "info.contactMessage": "Wiadomość",
     "info.contactSubmit": "Wyślij wiadomość",
+    "info.contactThanks": "Dziękujemy — odezwiemy się wkrótce!",
+    "info.faqTitle": "FAQ",
+    "info.faqHeading": "Najczęściej zadawane pytania",
+    "info.faq1q": "Jaka będzie pogoda?",
+    "info.faq1a": "Zamówiliśmy piękną pogodę (dziękujemy Marguerite), jednak statystycznie można spodziewać się 25–30°C i słońca. Okulary przeciwsłoneczne wskazane.",
+    "info.faq2q": "Czy mogę przyjść ze zwierzątkiem?",
+    "info.faq2a": "Tak.",
+    "info.faq3q": "Czy jest parking przy kościele i na miejscu wesela?",
+    "info.faq3a": "Tak. Dla samochodów. Bez Boeinga, proszę.",
     "footer.copy": "Ślubny weekend w Lusowie i Szczepowicach"
   }
 };
@@ -390,6 +408,18 @@ function handleLogout() {
 }
 
 function initEvents() {
+  const contactForm = document.querySelector(".contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const lang = getSavedLanguage();
+      try {
+        await fetch(contactForm.action, { method: "POST", body: new FormData(contactForm) });
+      } catch {}
+      const thanks = SITE_COPY[lang]["info.contactThanks"] || "Thank you!";
+      contactForm.innerHTML = `<p style="color:var(--ink);font-size:1.1rem;padding:12px 0;line-height:1.6">${thanks}</p>`;
+    });
+  }
   const loginForm = document.getElementById("login-form");
   if (loginForm) {
     loginForm.addEventListener("submit", handleLogin);
