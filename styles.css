@@ -433,6 +433,14 @@ h2 {
   margin: 4px 0 14px;
 }
 
+.inline-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
 .inline-actions .template-button {
   min-height: 40px;
   font-size: 0.58rem;
