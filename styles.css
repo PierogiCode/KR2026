@@ -137,7 +137,8 @@ textarea {
 .hero-portrait img {
   width: min(400px, 90%);
   max-height: 560px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: top center;
   box-shadow: 0 12px 40px rgba(54, 40, 28, 0.22);
 }
@@ -416,6 +417,14 @@ h2 {
   margin: 8px 0 10px;
 }
 
+.drive-note {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 4px 0 14px;
+}
+
 .inline-actions .template-button {
   min-height: 40px;
   font-size: 0.58rem;
@@ -436,13 +445,15 @@ h2 {
 
 .story-panel figure {
   margin: 0;
-  height: 300px;
   overflow: hidden;
+  align-self: start;
 }
 
 .story-panel figure img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
+  max-height: 480px;
   object-fit: cover;
 }
 
@@ -663,8 +674,8 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .story-panel figure {
-    height: 220px;
+  .story-panel figure img {
+    max-height: 320px;
   }
 
   .template-nav {
