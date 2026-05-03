@@ -386,6 +386,14 @@ h2 {
   box-shadow: 0 2px 8px rgba(54, 40, 28, 0.18);
 }
 
+.portrait-medium {
+  width: 120px;
+  height: auto;
+  float: right;
+  margin: 0 0 8px 14px;
+  box-shadow: 0 2px 8px rgba(54, 40, 28, 0.18);
+}
+
 .faq-list {
   margin: 8px 0 0;
   padding: 0;
