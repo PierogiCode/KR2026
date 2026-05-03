@@ -26,8 +26,8 @@ const SITE_COPY = {
     "home.deadlineHeading": "Please reply by 31 May 2026",
     "home.deadlineBody": "Please RSVP by 31st May latest or you will miss the most anticipated party in Europe.",
     "home.weekendTitle": "Long weekend warning",
-    "home.weekendHeading": "Book flights and stays early",
-    "home.weekendBody": "This falls during a four day bank holiday weekend in Poland, so flights, trains and rooms will go quickly.",
+    "home.weekendHeading": "The Assumption of the Blessed Virgin Mary",
+    "home.weekendBody": "15 August is a national holiday in Poland, creating a four-day weekend. Flights, trains and accommodation will fill up fast — book early.",
     "home.placeTitle": "Places with character",
     "home.massTitle": "Holy Mass",
     "home.massHeading": "Kościół św. Jadwigi i św. Jakuba Apostoła",
@@ -38,7 +38,7 @@ const SITE_COPY = {
     "home.receptionDate": "From after Mass",
     "home.receptionAddress": "Szczepowice 14, 62-060 Wolkowo",
     "home.placeHeading": "Church, palace and a very Polish setting",
-    "home.placeBody1": "Lusowo sits just outside Poznań, a city known for trade, engineering, solid train connections and a stubborn sense of regional identity. It is one of Poland's oldest urban centres and still manages to feel practical, proud and slightly contrarian.",
+    "home.placeBody1": 'Take the opportunity to visit Poznań and the surroundings — check out the <a class="inline-link" href="info.html">Information page</a> for suggestions.',
     "home.placeBody2": 'The <a class="inline-link" href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jadwigi_%C5%9Al%C4%85skiej_i_%C5%9Bw._Jakuba_Aposto%C5%82a_w_Lusowie" target="_blank" rel="noreferrer">church of St Jadwiga and St James the Apostle</a> serves a historic local parish, while Pałac Szczepowice offers the quieter, estate-side mood for the evening celebration.',
     "rsvp.eyebrow": "RSVP",
     "rsvp.title": "Reply to the invitation",
@@ -88,6 +88,9 @@ const SITE_COPY = {
     "info.massAppsBody": 'The <a class="inline-link" href="https://drogowskaz.org" target="_blank" rel="noreferrer">Drogowskaz app</a> lists all Mass times and confessions in Poznań. We also invite you to visit the <a class="inline-link" href="https://archpoznan.pl/pl/kosciol-pw-sw-jozefa-karmelici" target="_blank" rel="noreferrer">Basilica of St Joseph</a> — he is interceding for us on this special day.',
     "info.travelTitle": "Getting there",
     "info.travelHeading": "Airports",
+    "info.venueMapTitle": "Venue locations",
+    "info.venueMapHeading": "Church in Lusowo & Pałac Szczepowice",
+    "info.venueMapBody": "The map shows both venues and the route between them. Addresses and map links are in the schedule above.",
     "info.travel1": "Poznań Airport is naturally very close to the venue.",
     "info.travel2": "Wrocław is a larger airport with very good connections to Poznań.",
     "info.travel3": "Szczecin and Bydgoszcz airports are also valid options.",
@@ -139,7 +142,7 @@ const SITE_COPY = {
     "info.faq2a": "Yes.",
     "info.faq3q": "Is there parking at the church and venue?",
     "info.faq3a": "Yes. For cars. No Boeings please.",
-    "footer.copy": "Wedding weekend in Lusowo and Szczepowice"
+    "footer.copy": "Pax Domini!"
   },
   pl: {
     "nav.home": "Start",
@@ -168,8 +171,8 @@ const SITE_COPY = {
     "home.deadlineHeading": "Prosimy o odpowiedź do 31 maja 2026",
     "home.deadlineBody": "Prosimy o RSVP najpóźniej do 31 maja, inaczej ominie Was najbardziej wyczekiwane wydarzenie w Europie.",
     "home.weekendTitle": "Uwaga na długi weekend",
-    "home.weekendHeading": "Rezerwujcie loty i noclegi wcześnie",
-    "home.weekendBody": "Termin wypada w czasie czterodniowego weekendu świątecznego w Polsce, więc loty, pociągi i pokoje będą szybko znikać.",
+    "home.weekendHeading": "Wniebowzięcie Najświętszej Maryi Panny",
+    "home.weekendBody": "15 sierpnia to święto państwowe w Polsce, co tworzy czterodniowy weekend. Loty, pociągi i noclegi szybko się zapełniają — rezerwuj wcześnie.",
     "home.placeTitle": "Miejsca z charakterem",
     "home.massTitle": "Msza Święta",
     "home.massHeading": "Kościół św. Jadwigi i św. Jakuba Apostoła",
@@ -180,7 +183,7 @@ const SITE_COPY = {
     "home.receptionDate": "Po Mszy Świętej",
     "home.receptionAddress": "Szczepowice 14, 62-060 Wolkowo",
     "home.placeHeading": "Kościół, pałac i bardzo polska sceneria",
-    "home.placeBody1": "Lusowo leży tuż pod Poznaniem, miastem znanym z handlu, inżynierii, dobrych połączeń kolejowych i upartego poczucia regionalnej tożsamości. To jeden z najstarszych ośrodków miejskich w Polsce, a przy tym nadal pozostaje praktyczny, dumny i lekko przekorny.",
+    "home.placeBody1": 'Skorzystaj z okazji i odwiedź Poznań oraz okolice — sprawdź <a class="inline-link" href="info.html">stronę Informacje</a> po więcej wskazówek.',
     "home.placeBody2": '<a class="inline-link" href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jadwigi_%C5%9Al%C4%85skiej_i_%C5%9Bw._Jakuba_Aposto%C5%82a_w_Lusowie" target="_blank" rel="noreferrer">Kościół św. Jadwigi i św. Jakuba Apostoła</a> służy historycznej parafii, a Pałac Szczepowice zapewnia spokojniejszy, majątkowy klimat na wieczorne świętowanie.',
     "rsvp.eyebrow": "RSVP",
     "rsvp.title": "Potwierdzenie przybycia",
@@ -230,6 +233,9 @@ const SITE_COPY = {
     "info.massAppsBody": 'Aplikacja <a class="inline-link" href="https://drogowskaz.org" target="_blank" rel="noreferrer">Drogowskaz</a> zawiera rozkład Mszy i spowiedzi w Poznaniu. Zapraszamy też do odwiedzenia <a class="inline-link" href="https://archpoznan.pl/pl/kosciol-pw-sw-jozefa-karmelici" target="_blank" rel="noreferrer">Bazyliki św. Józefa</a> — wstawiającego się za nami w tym szczególnym dniu.',
     "info.travelTitle": "Dojazd",
     "info.travelHeading": "Lotniska",
+    "info.venueMapTitle": "Lokalizacje",
+    "info.venueMapHeading": "Kościół w Lusowie i Pałac Szczepowice",
+    "info.venueMapBody": "Mapa pokazuje obie lokalizacje i trasę między nimi. Adresy i linki do map znajdziesz w harmonogramie powyżej.",
     "info.travel1": "Lotnisko Poznań jest naturalnie najbliżej miejsca wesela.",
     "info.travel2": "Wrocław to większe lotnisko z bardzo dobrymi połączeniami do Poznania.",
     "info.travel3": "Lotniska w Szczecinie i Bydgoszczy są również dobrymi opcjami.",
@@ -281,7 +287,7 @@ const SITE_COPY = {
     "info.faq2a": "Tak.",
     "info.faq3q": "Czy jest parking przy kościele i na miejscu wesela?",
     "info.faq3a": "Tak. Dla samochodów. Bez Boeinga, proszę.",
-    "footer.copy": "Ślubny weekend w Lusowie i Szczepowicach"
+    "footer.copy": "Pax Domini!"
   }
 };
 
