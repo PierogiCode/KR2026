@@ -333,7 +333,7 @@ const SITE_COPY = {
     "info.faqTitle": "FAQ",
     "info.faqHeading": "Najczęściej zadawane pytania",
     "info.faqDonationsQ": "Jak działają darowizny?",
-    \"info.faqDonationsA\": \"Wasza obecność jest już najlepszym prezentem, ale jeśli chcecie przekazać datek, będziemy bardzo wdzięczni, jeśli będzie w gotówce. W kopercie, na styl Ojca Chrzestnego.\",
+    "info.faqDonationsA": "Wasza obecność jest już najlepszym prezentem, ale jeśli chcecie przekazać datek, będziemy bardzo wdzięczni, jeśli będzie w gotówce. W kopercie, na styl Ojca Chrzestnego.",
     "info.faq1q": "Jaka będzie pogoda?",
     "info.faq1a": "Zamówiliśmy piękną pogodę (dziękujemy Marguerite), jednak statystycznie można spodziewać się 25–30°C i słońca. Okulary przeciwsłoneczne wskazane.",
     "info.faq2q": "Czy mogę przyjść ze zwierzątkiem?",
