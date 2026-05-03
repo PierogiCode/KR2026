@@ -348,6 +348,23 @@ h2 {
   margin-bottom: 6px;
 }
 
+.info-quote {
+  margin: 10px 0 4px;
+  padding-left: 14px;
+  border-left: 3px solid var(--olive);
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.info-quote-attr {
+  margin: 0 0 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+}
+
 .inline-actions {
   flex-wrap: wrap;
   margin: 8px 0 10px;
