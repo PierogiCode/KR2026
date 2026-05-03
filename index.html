@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richard & Kasia | Wedding</title>
-    <meta name="description" content="Wedding website for Richard and Kasia." />
+    <title>Kasia & Ryszard | Wedding</title>
+    <meta name="description" content="Wedding website for Kasia and Ryszard." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Alex+Brush&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -29,8 +29,8 @@
         </header>
 
         <main>
-          <section class="hero-image-frame">
-            <img src="PalaceBarWide.jpg" alt="Palace wedding venue" />
+          <section class="hero-portrait">
+            <img src="RichardKasiaCouplePortrait.HEIC" alt="Kasia and Ryszard" />
           </section>
 
           <section class="nameplate">
@@ -49,14 +49,22 @@
             </div>
           </section>
 
-          <section class="info-columns">
-            <article class="info-block">
-              <p class="block-kicker" data-i18n="home.dayTitle">The day</p>
-              <h2 data-i18n="home.dayHeading">Mass at 14:00, reception to follow</h2>
-              <p data-i18n="home.dayBody">
-                The wedding Mass begins at 14:00 in Kościół św. Jadwigi i Jakuba Apostoła, then we continue to Pałac Szczepowice for the reception.
-              </p>
+          <section class="event-highlight-grid">
+            <article class="info-block event-block">
+              <p class="block-kicker" data-i18n="home.massTitle">Holy Mass</p>
+              <h2 data-i18n="home.massHeading">Kościół św. Jadwigi i św. Jakuba Apostoła</h2>
+              <p class="event-time" data-i18n="home.massDate">Saturday 15 August 2026 · 14:00</p>
+              <p data-i18n="home.massAddress">Poznańska 2, 62-080 Lusowo</p>
             </article>
+            <article class="info-block event-block">
+              <p class="block-kicker" data-i18n="home.receptionTitle">Reception</p>
+              <h2 data-i18n="home.receptionHeading">Pałac Szczepowice</h2>
+              <p class="event-time" data-i18n="home.receptionDate">From after Mass</p>
+              <p data-i18n="home.receptionAddress">Szczepowice 14, 62-060 Wolkowo</p>
+            </article>
+          </section>
+
+          <section class="info-columns two-col">
             <article class="info-block">
               <p class="block-kicker" data-i18n="home.deadlineTitle">RSVP deadline</p>
               <h2 data-i18n="home.deadlineHeading">Please reply by 31 May 2026</h2>
@@ -71,7 +79,7 @@
 
           <section class="story-panel">
             <figure>
-              <img src="ChurchGateWide.png" alt="Church gate in Lusowo" />
+              <img src="PalaceBarWide.jpg" alt="Pałac Szczepowice" />
             </figure>
             <div>
               <p class="block-kicker" data-i18n="home.placeTitle">Places with character</p>
@@ -79,13 +87,9 @@
               <p data-i18n="home.placeBody1">
                 Lusowo sits just outside Poznań, a city known for trade, engineering, solid train connections and a stubborn sense of regional identity. It is one of Poland's oldest urban centres and still manages to feel practical, proud and slightly contrarian.
               </p>
-              <p data-i18n="home.placeBody2">
-                The church of St Jadwiga and St James the Apostle serves a historic local parish, while Pałac Szczepowice offers the quieter, estate-side mood for the evening celebration.
+              <p data-i18n-html="home.placeBody2">
+                The <a class="inline-link" href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jadwigi_%C5%9Al%C4%85skiej_i_%C5%9Bw._Jakuba_Aposto%C5%82a_w_Lusowie" target="_blank" rel="noreferrer">church of St Jadwiga and St James the Apostle</a> serves a historic local parish, while Pałac Szczepowice offers the quieter, estate-side mood for the evening celebration.
               </p>
-              <div class="heritage-inline">
-                <img src="VaticanFlag.png" alt="Vatican flag" />
-                <img src="PolandHerb.png" alt="Polish coat of arms" />
-              </div>
             </div>
           </section>
         </main>
@@ -93,10 +97,11 @@
         <footer class="template-footer">
           <a class="footer-rsvp" href="rsvp.html" data-i18n="nav.rsvp">RSVP</a>
           <div class="footer-center">
-            <p class="couple-name">Richard & Kasia</p>
+            <p class="couple-name">Kasia & Ryszard</p>
             <p data-i18n="footer.copy">Wedding weekend in Lusowo and Szczepowice</p>
           </div>
           <div class="footer-herbs">
+            <img src="PolandHerb.png" alt="Polish coat of arms" />
             <img src="PoznanHerb.png" alt="Poznań coat of arms" />
             <img src="ZielonaGoraHerb.png" alt="Zielona Góra coat of arms" />
           </div>
